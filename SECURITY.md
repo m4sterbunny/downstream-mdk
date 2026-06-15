@@ -4,12 +4,7 @@
 
 MDK is currently in active development and has not reached a stable (`x.y.z`) release yet.
 
-Until stable releases are available, security support is provided for:
-
-- The latest commit on `main`
-- The most recent pre-release tags (`*-beta`, `*-rc`)
-
-Older pre-release versions may not receive security fixes.
+Until stable releases are available, security support is provided for the latest commit on `main`. Pre-release versions may not receive security fixes.
 
 ## Reporting a vulnerability
 
