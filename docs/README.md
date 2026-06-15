@@ -64,3 +64,11 @@ You build applications on MDK, or integrate a new device / pool / data feed.
 You change documentation, conventions, or the source-of-truth IA in this repo, see [`reference/maintainers/README.md`](reference/maintainers/README.md).
 
 Alternatively, browse the published end-user documentation at [docs.mdk.tether.io](https://docs.mdk.tether.io/).
+
+## Release notes
+
+| Release | Where |
+| --- | --- |
+| **v0.2.0** (current) | [`reference/release-notes/0.2.0-release.md`](reference/release-notes/0.2.0-release.md) |
+| v0.0.1 (historical) | [`reference/release-notes/0.0.1-release.md`](reference/release-notes/0.0.1-release.md) |
+| Full changelog | [`../CHANGELOG.md`](../CHANGELOG.md) |

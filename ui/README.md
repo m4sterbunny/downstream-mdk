@@ -141,11 +141,11 @@ and seeds the agent context files (`.mdk/context.md`, Cursor / Claude
 rules) for you:
 
 ```bash
-npx mdk-ui create my-app           # one-shot scaffold + install
+npx @tetherto/mdk-ui-cli create my-app           # one-shot scaffold + install
 cd my-app
 npm run dev                         # http://localhost:5173
 
-# Iterate from inside the app
+# Iterate from inside the app (after install, the `mdk-ui` binary is on PATH)
 npx mdk-ui add feature alerts       # full alerts page from a blueprint
 npx mdk-ui add page Hashrate        # single-component page (auto-resolves)
 npx mdk-ui remove page Hashrate     # undo a scaffolded page
@@ -155,7 +155,7 @@ For a full sign-in-gated operations dashboard against a real backend,
 use the `mdk-ui-shell` template instead of `starter`:
 
 ```bash
-npx mdk-ui create my-dashboard --template mdk-ui-shell
+npx @tetherto/mdk-ui-cli create my-dashboard --template mdk-ui-shell
 ```
 
 That template needs a local

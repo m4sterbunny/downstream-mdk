@@ -1,16 +1,19 @@
 # Changelog
 
-See also, the curated [release notes](./docs/reference/release-notes/0.0.1-release.md).
+Curated release notes:
 
-## Overview v0.2.0
+- [v0.2.0](./docs/reference/release-notes/0.2.0-release.md) — current release
+- [v0.0.1](./docs/reference/release-notes/0.0.1-release.md) — inaugural release (historical)
+
+## v0.2.0
 
 MDK v0.2.0 is a major architectural release. The monorepo has been restructured into three fully federated domains (`backend/core`, `backend/workers`, `ui`), the worker layer has been promoted to a first-class package with a formal protocol contract, the UI state layer has been rewritten around Zustand and React 19, and a new agent-first CLI and MCP endpoint land as net-new additions.
 
 ## Breaking changes
 
-### Node.js minimum version bumped to `>=22`, >`>=24` recommended
+### Node.js minimum version bumped to `>=24`
 
-All packages now require Node.js 22+. The previous minimum was Node.js 20.
+All packages now require Node.js 24+. The previous minimum was Node.js 20.
 
 ### Monorepo directory layout restructured
 

@@ -1,6 +1,8 @@
 # MDK
 
-[![Status](https://img.shields.io/badge/status-pre--alpha-lightgrey?style=flat-square)](#status)
+**Current release: [v0.2.0](https://github.com/tetherto/mdk/releases/tag/v0.2.0)**
+
+[![Release](https://img.shields.io/github/v/release/tetherto/mdk?display_name=tag&style=flat-square)](https://github.com/tetherto/mdk/releases/tag/v0.2.0)
 [![MDK UI CI](https://img.shields.io/github/actions/workflow/status/tetherto/mdk/ui.yaml?branch=main&label=UI%20CI&style=flat-square&logo=github)](https://github.com/tetherto/mdk/actions/workflows/ui.yaml)
 [![MDK Core CI](https://img.shields.io/github/actions/workflow/status/tetherto/mdk/core.yaml?branch=main&label=Core%20CI&style=flat-square&logo=github)](https://github.com/tetherto/mdk/actions/workflows/core.yaml)
 [![CodeQL](https://github.com/tetherto/mdk/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/tetherto/mdk/actions/workflows/github-code-scanning/codeql)
@@ -8,10 +10,7 @@
 
 ## Status
 
-⚠️ **Work in Progress**
-
-MDK is currently under active development and is **not yet considered stable**. To test the SDK or explore the latest 
-functionality, use the **[`main` branch](https://github.com/tetherto/mdk/tree/main)**.
+MDK v0.2.0 is an early SemVer release — suitable for evaluation and integration, with active development continuing on [`main`](https://github.com/tetherto/mdk/tree/main). See the [v0.2.0 release notes](docs/reference/release-notes/0.2.0-release.md) for scope, package versions, and upgrade guidance.
 
 ## Table of Contents
 
@@ -129,11 +128,14 @@ leverage the packages provided for React (Vue, Svelte, and Web Components on the
 
 ## Releases
 
-The latest development code is available on the `main` branch, with pre-release versions tagged as `*-beta` and `*-rc`. Stable releases will be tagged 
-using semantic versioning without suffixes (e.g., `1.0.0`).
+**Current release:** [v0.2.0](docs/reference/release-notes/0.2.0-release.md) — federated monorepo restructure, worker protocol contracts, Zustand UI state, React 19, and agent-first CLI.
 
-- `*-beta`, `*-rc` → Active development tags (latest features and changes)  
-- `x.y.z` → Reserved for stable releases  
+| Tag | Notes |
+|---|---|
+| [v0.2.0](docs/reference/release-notes/0.2.0-release.md) | Current release; requires Node.js >= 24 |
+| [v0.0.1](docs/reference/release-notes/0.0.1-release.md) | Inaugural UI-focused release (historical) |
+
+Pre-release development tags (`*-beta`, `*-rc`) may appear on `main` between stable tags. The monorepo root (`@tetherto/mdk`) tracks the MDK release line; `backend/core` and `backend/workers` use independent per-domain versioning at 0.0.1 until published separately.
 
 ## Get started
 
@@ -145,7 +147,7 @@ One command produces a working Vite + React + MDK app, with the agent-context fi
 iterate on it from day one:
 
 ```bash
-npx mdk-ui create my-app
+npx @tetherto/mdk-ui-cli create my-app
 cd my-app
 npm run dev                   # http://localhost:5173
 ```
@@ -153,8 +155,8 @@ npm run dev                   # http://localhost:5173
 Then iterate from inside the app:
 
 ```bash
-npx mdk-ui add feature alerts # full blueprint
-npx mdk-ui add page Hashrate  # single page
+npx @tetherto/mdk-ui-cli add feature alerts # full blueprint
+npx @tetherto/mdk-ui-cli add page Hashrate  # single page
 ```
 
 Full CLI reference: [`ui/README.md`](ui/README.md) and the [agent-first quickstart](ui/docs/AGENT_FIRST.md).
