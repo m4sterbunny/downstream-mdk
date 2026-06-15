@@ -1,7 +1,5 @@
 # MDK
 
-**Current release: [v0.2.0](https://github.com/tetherto/mdk/releases/tag/v0.2.0)**
-
 [![Release](https://img.shields.io/github/v/release/tetherto/mdk?display_name=tag&style=flat-square)](https://github.com/tetherto/mdk/releases/tag/v0.2.0)
 [![MDK UI CI](https://img.shields.io/github/actions/workflow/status/tetherto/mdk/ui.yaml?branch=main&label=UI%20CI&style=flat-square&logo=github)](https://github.com/tetherto/mdk/actions/workflows/ui.yaml)
 [![MDK Core CI](https://img.shields.io/github/actions/workflow/status/tetherto/mdk/core.yaml?branch=main&label=Core%20CI&style=flat-square&logo=github)](https://github.com/tetherto/mdk/actions/workflows/core.yaml)
@@ -10,7 +8,11 @@
 
 ## Status
 
-MDK v0.2.0 is an early SemVer release — suitable for evaluation and integration, with active development continuing on [`main`](https://github.com/tetherto/mdk/tree/main). See the [v0.2.0 release notes](docs/reference/release-notes/0.2.0-release.md) for scope, package versions, and upgrade guidance.
+⚠️ **Work in Progress**
+
+MDK is under active development and is **not yet considered stable**. 
+
+Current release: [v0.2.0](https://github.com/tetherto/mdk/releases/tag/v0.2.0). 
 
 ## Table of Contents
 
@@ -128,14 +130,11 @@ leverage the packages provided for React (Vue, Svelte, and Web Components on the
 
 ## Releases
 
-**Current release:** [v0.2.0](docs/reference/release-notes/0.2.0-release.md) — federated monorepo restructure, worker protocol contracts, Zustand UI state, React 19, and agent-first CLI.
+The latest development code is available on the [`main`](https://github.com/tetherto/mdk/tree/main) branch, with pre-release versions tagged as `*-beta` and `*-rc`. Stable releases will be tagged 
+using semantic versioning without suffixes (e.g., `1.0.0`).
 
-| Tag | Notes |
-|---|---|
-| [v0.2.0](docs/reference/release-notes/0.2.0-release.md) | Current release; requires Node.js >= 24 |
-| [v0.0.1](docs/reference/release-notes/0.0.1-release.md) | Inaugural UI-focused release (historical) |
-
-Pre-release development tags (`*-beta`, `*-rc`) may appear on `main` between stable tags. The monorepo root (`@tetherto/mdk`) tracks the MDK release line; `backend/core` and `backend/workers` use independent per-domain versioning at 0.0.1 until published separately.
+- `*-beta`, `*-rc` → Active development tags (latest features and changes)  
+- `x.y.z` → Reserved for stable releases  
 
 ## Get started
 
