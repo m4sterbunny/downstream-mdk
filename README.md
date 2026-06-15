@@ -130,8 +130,14 @@ leverage the packages provided for React (Vue, Svelte, and Web Components on the
 
 ## Releases
 
-The latest development code is available on the [`main`](https://github.com/tetherto/mdk/tree/main) branch, with pre-release versions 0.y.z representing initial development. Stable releases will be tagged 
-using semantic versioning without suffixes (e.g., `1.0.0`).
+The latest development code is available on the [`main`](https://github.com/tetherto/mdk/tree/main) branch. MDK follows [Semantic Versioning 2.0.0](https://semver.org/): `0.y.z` versions are initial development (public API not stable until `1.0.0`); `1.0.0` and above denote a stable public API.
+
+| Release | Release notes |
+|---|---|
+| **v0.2.0** (current) | [`docs/reference/release-notes/0.2.0-release.md`](docs/reference/release-notes/0.2.0-release.md) |
+| v0.0.1 (historical) | [`docs/reference/release-notes/0.0.1-release.md`](docs/reference/release-notes/0.0.1-release.md) |
+
+Full version history: [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Get started
 
